@@ -1,0 +1,67 @@
+{
+  "enabledPlugins": {
+    "code-simplifier@claude-plugins-official": true,
+    "ecc@ecc": true,
+    "planning-with-files@planning-with-files": true,
+    "ralph-loop@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "self-improving-agent@claude-code-skills": true,
+    "supergoal@supergoal": true,
+    "superpowers@claude-plugins-official": false,
+    "waza@waza": true
+  },
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "tp-sv07dlsdn6iuudluk78svb5vk8k4bs9jxiw12migb05u3fu9",
+    "ANTHROPIC_BASE_URL": "https://token-plan-sgp.xiaomimimo.com/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "mimo-v2.5-pro",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "mimo-v2.5-pro",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "mimo-v2.5-pro[1M]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "mimo-v2.5-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "mimo-v2.5-pro[1M]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "mimo-v2.5-pro",
+    "ANTHROPIC_MODEL": "mimo-v2.5-pro",
+    "CLAUDE_CODE_DISABLE_AUTOUPDATER": "1",
+    "DISABLE_AUTOUPDATER": "1"
+  },
+  "extraKnownMarketplaces": {
+    "claude-code-skills": {
+      "source": {
+        "repo": "alirezarezvani/claude-skills",
+        "source": "github"
+      }
+    },
+    "ecc": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/affaan-m/ECC.git"
+      }
+    },
+    "planning-with-files": {
+      "source": {
+        "repo": "OthmanAdi/planning-with-files",
+        "source": "github"
+      }
+    },
+    "supergoal": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/robzilla1738/supergoal.git"
+      }
+    },
+    "waza": {
+      "source": {
+        "repo": "tw93/Waza",
+        "source": "github"
+      }
+    }
+  },
+  "includeCoAuthoredBy": false,
+  "skipDangerousModePermissionPrompt": true,
+  "statusLine": {
+    "command": "ccstatusline-zh",
+    "padding": 0,
+    "refreshInterval": 10,
+    "type": "command"
+  },
+  "theme": "dark"
+}

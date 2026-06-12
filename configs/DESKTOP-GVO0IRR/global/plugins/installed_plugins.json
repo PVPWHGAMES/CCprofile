@@ -1,0 +1,92 @@
+{
+  "version": 2,
+  "plugins": {
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\claude-plugins-official\\superpowers\\5.1.0",
+        "version": "5.1.0",
+        "installedAt": "2026-06-01T02:10:52.424Z",
+        "lastUpdated": "2026-06-01T02:10:52.424Z",
+        "gitCommitSha": "f2cbfbefebbfef77321e4c9abc9e949826bea9d7"
+      }
+    ],
+    "planning-with-files@planning-with-files": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\planning-with-files\\planning-with-files\\2.43.0",
+        "version": "2.43.0",
+        "installedAt": "2026-06-01T02:11:49.908Z",
+        "lastUpdated": "2026-06-01T02:11:49.908Z",
+        "gitCommitSha": "6f94643bd2b77dad9ac30b68ace14a536e2e5619"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\claude-plugins-official\\code-simplifier\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-06-01T02:11:57.831Z",
+        "lastUpdated": "2026-06-01T02:11:57.831Z"
+      }
+    ],
+    "ralph-loop@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\claude-plugins-official\\ralph-loop\\1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-06-01T02:13:21.717Z",
+        "lastUpdated": "2026-06-01T02:13:21.717Z"
+      }
+    ],
+    "self-improving-agent@claude-code-skills": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\claude-code-skills\\self-improving-agent\\2.9.0",
+        "version": "2.9.0",
+        "installedAt": "2026-06-01T08:23:16.000Z",
+        "lastUpdated": "2026-06-01T08:23:16.000Z",
+        "gitCommitSha": "56d41613d1ca1e2b0614a19c3816ec97a6159ec2"
+      }
+    ],
+    "waza@waza": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\waza\\waza\\3.26.0",
+        "version": "3.26.0",
+        "installedAt": "2026-06-01T08:33:33.103Z",
+        "lastUpdated": "2026-06-01T08:33:33.103Z",
+        "gitCommitSha": "38dd6b2010b0f568f34ad554ed7fc107d41f0976"
+      }
+    ],
+    "ecc@ecc": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\ecc\\ecc\\2.0.0-rc.1",
+        "version": "2.0.0-rc.1",
+        "installedAt": "2026-06-08T02:11:35.798Z",
+        "lastUpdated": "2026-06-08T02:11:35.798Z",
+        "gitCommitSha": "90dfd9505dc860714cf3cc8216ad7bbb96d93365"
+      }
+    ],
+    "security-guidance@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\claude-plugins-official\\security-guidance\\2.0.3",
+        "version": "2.0.3",
+        "installedAt": "2026-06-08T02:58:05.346Z",
+        "lastUpdated": "2026-06-08T02:58:05.346Z"
+      }
+    ],
+    "supergoal@supergoal": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\supergoal\\supergoal\\0.7.0",
+        "version": "0.7.0",
+        "installedAt": "2026-06-11T06:02:38.865Z",
+        "lastUpdated": "2026-06-11T06:02:38.865Z",
+        "gitCommitSha": "a8761ed5c5317e5f5f480b0f5069d97b146bf5b4"
+      }
+    ]
+  }
+}

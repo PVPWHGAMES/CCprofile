@@ -1,0 +1,50 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\claude-plugins-official",
+    "lastUpdated": "2026-06-10T06:41:55.055Z"
+  },
+  "planning-with-files": {
+    "source": {
+      "source": "github",
+      "repo": "OthmanAdi/planning-with-files"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\planning-with-files",
+    "lastUpdated": "2026-06-01T02:11:13.012Z"
+  },
+  "claude-code-skills": {
+    "source": {
+      "source": "github",
+      "repo": "alirezarezvani/claude-skills"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\claude-code-skills",
+    "lastUpdated": "2026-06-01T08:22:45.457Z"
+  },
+  "waza": {
+    "source": {
+      "source": "github",
+      "repo": "tw93/Waza"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\waza",
+    "lastUpdated": "2026-06-01T08:33:27.247Z"
+  },
+  "ecc": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/affaan-m/ECC.git"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\ecc",
+    "lastUpdated": "2026-06-08T02:10:34.167Z"
+  },
+  "supergoal": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/robzilla1738/supergoal.git"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\supergoal",
+    "lastUpdated": "2026-06-11T05:59:44.213Z"
+  }
+}
