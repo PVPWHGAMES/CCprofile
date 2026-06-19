@@ -35,6 +35,18 @@
   - test: 测试
   - chore: 构建/工具
 
+## 配置同步
+
+- 当用户提到「同步配置」、「备份配置」、「上传配置」、「恢复配置」等语句时，使用 `cc-config-sync` 处理
+- 常用命令：
+  - `cc-config-sync pull` — 将本地配置同步到仓库
+  - `cc-config-sync push` — 将仓库配置同步到本地
+  - `cc-config-sync status` — 查看本地与仓库的差异
+  - `cc-config-sync list` — 列出所有跟踪的路径
+- 仓库路径通过 `cc-config-sync config show` 查看
+- 同步到仓库后需手动 `git add`、`git commit`、`git push` 推送到远程
+- **注意**：`settings.json` 中的 `ANTHROPIC_AUTH_TOKEN` 和 `ANTHROPIC_BASE_URL` 是敏感信息，提交前需脱敏处理
+
 ## 安全意识
 
 - 不在代码中硬编码密码、密钥等敏感信息
