@@ -1,0 +1,4 @@
+[2026-06-30T00:38:00.042Z] tool=Bash command=git config --global user.name "weihong" && git config --global user.email "hong.wei@nx-engine.com"
+[2026-06-30T00:38:03.696Z] tool=Bash command=git config --global user.name && git config --global user.email
+[2026-06-30T00:39:13.645Z] tool=Bash command=git config --global http.proxy http://127.0.0.1:7890 && git config --global https.proxy http://127.0.0.1:7890
+[2026-06-30T00:39:20.055Z] tool=Bash command=git config --global --get http.proxy && git config --global --get https.proxy

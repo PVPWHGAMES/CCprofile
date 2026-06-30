@@ -1,0 +1,30 @@
+# Session: 2026-06-30
+**Date:** 2026-06-30
+**Started:** 08:38
+**Last Updated:** 08:39
+**Project:** Desktop
+**Branch:** unknown
+**Worktree:** C:\Users\pvp\Desktop
+
+---
+<!-- ECC:SUMMARY:START -->
+## Session Summary
+
+### Tasks
+- 帮我设置一下全局的git信息 用户名：weihong  邮箱：hong.wei@nx-engine.com
+- 全局git使用代理，项目不使用，端口为7890
+
+### Tools Used
+Bash
+
+### Stats
+- Total user messages: 2
+<!-- ECC:SUMMARY:END -->
+
+### Notes for Next Session
+-
+
+### Context to Load
+```
+[relevant files]
+```

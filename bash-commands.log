@@ -1,0 +1,4 @@
+[2026-06-30T00:38:00.040Z] git config --global user.name "weihong" && git config --global user.email "hong.wei@nx-engine.com"
+[2026-06-30T00:38:03.694Z] git config --global user.name && git config --global user.email
+[2026-06-30T00:39:13.644Z] git config --global http.proxy http://127.0.0.1:7890 && git config --global https.proxy http://127.0.0.1:7890
+[2026-06-30T00:39:20.053Z] git config --global --get http.proxy && git config --global --get https.proxy
