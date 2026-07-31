@@ -1,25 +1,29 @@
 {
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "tp-sv07dlsdn6iuudluk78svb5vk8k4bs9jxiw12migb05u3fu9",
-    "ANTHROPIC_BASE_URL": "https://token-plan-sgp.xiaomimimo.com/anthropic",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "mimo-v2.5-pro",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "mimo-v2.5-pro",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "mimo-v2.5-pro",
-    "ANTHROPIC_MODEL": "mimo-v2.5-pro"
+    "ANTHROPIC_AUTH_TOKEN": "sk-0893e423156e4748987a153a57efe095",
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "deepseek-v4-pro[1M]",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro[1M]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro[1M]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "deepseek-v4-pro",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro"
   },
-  "includeCoAuthoredBy": false,
-  "skipDangerousModePermissionPrompt": true,
-  "theme": "dark",
   "hooks": {
     "SessionStart": [
       {
         "hooks": [
           {
-            "type": "command",
-            "command": "git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true"
+            "command": "git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true",
+            "type": "command"
           }
         ]
       }
     ]
-  }
+  },
+  "includeCoAuthoredBy": false,
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark"
 }
