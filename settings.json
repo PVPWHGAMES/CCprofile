@@ -16,7 +16,7 @@
       {
         "hooks": [
           {
-            "command": "git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true",
+            "command": "(cd ~/.claude && git add settings.json && (git diff --cached --quiet || git commit -m \"chore: update API config\" --quiet)) 2>/dev/null || true; git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true",
             "type": "command"
           }
         ]
