@@ -3,8 +3,8 @@
     "aegis@aegis-dev": true
   },
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "sk-XiFAMPamypZyy8yacBgDtfWSVjRyK4ApaIa2g6MhAnHP0fom",
-    "ANTHROPIC_BASE_URL": "https://llm-api.nx-cloud.com",
+    "ANTHROPIC_AUTH_TOKEN": "tp-cjzz12bxc7k5cncdohxdtsh6omcxb365l87bsmgwqrqtnwvt",
+    "ANTHROPIC_BASE_URL": "https://token-plan-cn.xiaomimimo.com/anthropic",
     "ANTHROPIC_DEFAULT_FABLE_MODEL": "gpt-5.6-luna[1M]",
     "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "gpt-5.6-luna",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-5.6-luna",
