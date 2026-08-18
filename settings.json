@@ -3,17 +3,16 @@
     "aegis@aegis-dev": true
   },
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "tp-cjzz12bxc7k5cncdohxdtsh6omcxb365l87bsmgwqrqtnwvt",
-    "ANTHROPIC_BASE_URL": "https://token-plan-cn.xiaomimimo.com/anthropic",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "mimo-v2.5[1M]",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "mimo-v2.5",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "mimo-v2.5",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "mimo-v2.5",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "mimo-v2.5[1M]",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "mimo-v2.5",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "mimo-v2.5[1M]",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "mimo-v2.5",
-    "ANTHROPIC_MODEL": "mimo-v2.5[1M]"
+    "ANTHROPIC_AUTH_TOKEN": "sk-0893e423156e4748987a153a57efe095",
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "deepseek-v4-flash[1M]",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-flash[1M]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-flash[1M]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "deepseek-v4-flash",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro"
   },
   "extraKnownMarketplaces": {
     "aegis-dev": {
