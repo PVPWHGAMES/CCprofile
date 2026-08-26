@@ -3,17 +3,17 @@
     "aegis@aegis-dev": true
   },
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "c97e97d3f2534ea5a6c922d4d5d8cc72.A59a2zE42qpYborJ",
-    "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "glm-5.3[1M]",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "glm-5.3",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "glm-5.3",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "glm-5.3",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "glm-5.3[1M]",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "glm-5.3",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "glm-5.3[1M]",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "glm-5.3",
-    "ANTHROPIC_MODEL": "glm-5.3[1M]"
+    "ANTHROPIC_AUTH_TOKEN": "sk-PerHXNVTv95jzpzQ9Rzkl3uBjmv36A3xqHmVDOnRYr9EIzFw",
+    "ANTHROPIC_BASE_URL": "https://ai.zfb.la",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "gpt-5.6-sol[1M]",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "gpt-5.6-sol",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-5.6-sol",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "gpt-5.6-sol",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-5.6-sol[1M]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "gpt-5.6-sol",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-5.6-sol[1M]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "gpt-5.6-sol",
+    "ANTHROPIC_MODEL": "gpt-5.6-sol[1M]"
   },
   "extraKnownMarketplaces": {
     "aegis-dev": {
