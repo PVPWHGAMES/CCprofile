@@ -3,17 +3,16 @@
     "aegis@aegis-dev": true
   },
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "sk-PerHXNVTv95jzpzQ9Rzkl3uBjmv36A3xqHmVDOnRYr9EIzFw",
-    "ANTHROPIC_BASE_URL": "https://ai.zfb.la",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "gpt-5.6-terra[1M]",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "gpt-5.6-terra",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-5.6-terra",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "gpt-5.6-terra",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-5.6-terra[1M]",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "gpt-5.6-terra",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-5.6-terra[1M]",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "gpt-5.6-terra",
-    "ANTHROPIC_MODEL": "gpt-5.6-terra[1M]"
+    "ANTHROPIC_AUTH_TOKEN": "sk-0893e423156e4748987a153a57efe095",
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "deepseek-v4-flash[1M]",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-flash[1M]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-flash[1M]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "deepseek-v4-flash",
+    "ANTHROPIC_MODEL": "deepseek-v4-flash[1M]"
   },
   "extraKnownMarketplaces": {
     "aegis-dev": {
