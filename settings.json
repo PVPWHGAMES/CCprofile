@@ -3,8 +3,8 @@
     "aegis@aegis-dev": true
   },
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "sk-PerHXNVTv95jzpzQ9Rzkl3uBjmv36A3xqHmVDOnRYr9EIzFw",
-    "ANTHROPIC_BASE_URL": "https://ai.zfb.la",
+    "ANTHROPIC_AUTH_TOKEN": "sk-23239e8fdfec024f1e34a2534685244149e491d1a873581b0cb851e1d0fc07dd",
+    "ANTHROPIC_BASE_URL": "https://www.ddshub.cc",
     "ANTHROPIC_DEFAULT_FABLE_MODEL": "gpt-5.6-terra[1M]",
     "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "gpt-5.6-terra",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-5.6-terra",
