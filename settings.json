@@ -14,7 +14,8 @@
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-6-sol[1M]",
     "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "gpt-6-sol",
     "ANTHROPIC_MODEL": "gpt-6-sol",
-    "CLAUDE_CODE_SUBAGENT_MODEL": "gpt-6-sol"
+    "CLAUDE_CODE_SUBAGENT_MODEL": "gpt-6-sol",
+    "DISABLE_AUTOUPDATER": "1"
   },
   "extraKnownMarketplaces": {
     "aegis-dev": {
