@@ -3,16 +3,17 @@
     "aegis@aegis-dev": true
   },
   "env": {
-    "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "claude-fable-5[1M]",
+    "ANTHROPIC_AUTH_TOKEN": "sk-23239e8fdfec024f1e34a2534685244149e491d1a873581b0cb851e1d0fc07dd",
+    "ANTHROPIC_BASE_URL": "https://www.ddshub.cc",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "gpt-6-sol[1M]",
     "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "gpt-6-sol",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4-5",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "gpt-6-sol",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "gpt-6-sol",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-5[1M]",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "gpt-6-sol[1M]",
     "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "gpt-6-sol",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-5[1M]",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "gpt-6-sol[1M]",
     "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "gpt-6-sol",
+    "ANTHROPIC_MODEL": "gpt-6-sol",
     "CLAUDE_CODE_SUBAGENT_MODEL": "gpt-6-sol",
     "DISABLE_AUTOUPDATER": "1"
   },
