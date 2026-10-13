@@ -1,7 +1,4 @@
 {
-  "enabledPlugins": {
-    "aegis@aegis-dev": true
-  },
   "env": {
     "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
     "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
@@ -16,27 +13,68 @@
     "CLAUDE_CODE_AUTO_MODE_SERVER": "0",
     "DISABLE_AUTOUPDATER": "1"
   },
-  "extraKnownMarketplaces": {
-    "aegis-dev": {
-      "source": {
-        "path": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\GanyuanRan-Aegis",
-        "source": "directory"
-      }
-    }
-  },
+  "includeCoAuthoredBy": false,
   "hooks": {
     "SessionStart": [
       {
         "hooks": [
           {
-            "command": "(cd ~/.claude && git add settings.json && (git diff --cached --quiet || git commit -m \"chore: update API config\" --quiet)) 2>/dev/null || true; git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true",
-            "type": "command"
+            "type": "command",
+            "command": "(cd ~/.claude && git add settings.json && (git diff --cached --quiet || git commit -m \"chore: update API config\" --quiet)) 2>/dev/null || true; git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true"
           }
         ]
       }
     ]
   },
-  "includeCoAuthoredBy": false,
+  "enabledPlugins": {
+    "aegis@aegis-dev": true,
+    "ecc@ecc": true,
+    "planning-with-files@planning-with-files": true,
+    "self-improving-agent@claude-code-skills": true,
+    "supergoal@supergoal": true,
+    "waza@waza": true,
+    "code-simplifier@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "aegis-dev": {
+      "source": {
+        "source": "github",
+        "repo": "GanyuanRan/Aegis"
+      }
+    },
+    "ecc": {
+      "source": {
+        "source": "github",
+        "repo": "affaan-m/ECC"
+      }
+    },
+    "planning-with-files": {
+      "source": {
+        "source": "github",
+        "repo": "OthmanAdi/planning-with-files"
+      }
+    },
+    "claude-code-skills": {
+      "source": {
+        "source": "github",
+        "repo": "alirezarezvani/claude-skills"
+      }
+    },
+    "supergoal": {
+      "source": {
+        "source": "github",
+        "repo": "robzilla1738/supergoal"
+      }
+    },
+    "waza": {
+      "source": {
+        "source": "github",
+        "repo": "tw93/Waza"
+      }
+    }
+  },
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark"
 }
