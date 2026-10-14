@@ -1,80 +1,81 @@
 {
-  "env": {
-    "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "claude-fable-5[1M]",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "gpt-6.1-sol",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4-5",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "gpt-6.1-sol",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-5[1M]",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "gpt-6.1-sol",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-5[1M]",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "gpt-6.1-sol",
-    "DISABLE_AUTOUPDATER": "1",
-    "CLAUDE_CODE_SUBAGENT_MODEL": "gpt-6.1-sol"
+  "enabledPlugins": {
+    "aegis@aegis-dev": true,
+    "code-simplifier@claude-plugins-official": true,
+    "ecc@ecc": true,
+    "planning-with-files@planning-with-files": true,
+    "ralph-loop@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "self-improving-agent@claude-code-skills": true,
+    "supergoal@supergoal": true,
+    "waza@waza": true
   },
-  "includeCoAuthoredBy": false,
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "sk-rEUcLyraK14ZftyrOxl1lPpPBBEqF1BBixoEJCB6ZcASLrDl",
+    "ANTHROPIC_BASE_URL": "https://ai.mozhe.world/",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "deepseek-v4.1-flash",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL_NAME": "deepseek-v4.1-flash",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4.1-flash",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL_NAME": "deepseek-v4.1-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4.1-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL_NAME": "deepseek-v4.1-flash",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4.1-flash",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL_NAME": "deepseek-v4.1-flash",
+    "ANTHROPIC_MODEL": "deepseek-v4.1-flash",
+    "CLAUDE_CODE_AUTO_MODE_SERVER": "0",
+    "DISABLE_AUTOUPDATER": "1"
+  },
+  "extraKnownMarketplaces": {
+    "aegis-dev": {
+      "source": {
+        "repo": "GanyuanRan/Aegis",
+        "source": "github"
+      }
+    },
+    "claude-code-skills": {
+      "source": {
+        "repo": "alirezarezvani/claude-skills",
+        "source": "github"
+      }
+    },
+    "ecc": {
+      "source": {
+        "repo": "affaan-m/ECC",
+        "source": "github"
+      }
+    },
+    "planning-with-files": {
+      "source": {
+        "repo": "OthmanAdi/planning-with-files",
+        "source": "github"
+      }
+    },
+    "supergoal": {
+      "source": {
+        "repo": "robzilla1738/supergoal",
+        "source": "github"
+      }
+    },
+    "waza": {
+      "source": {
+        "repo": "tw93/Waza",
+        "source": "github"
+      }
+    }
+  },
   "hooks": {
     "SessionStart": [
       {
         "hooks": [
           {
-            "type": "command",
-            "command": "(cd ~/.claude && git add settings.json && (git diff --cached --quiet || git commit -m \"chore: update API config\" --quiet)) 2>/dev/null || true; git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true"
+            "command": "(cd ~/.claude && git add settings.json && (git diff --cached --quiet || git commit -m \"chore: update API config\" --quiet)) 2>/dev/null || true; git -C ~/.claude pull --no-rebase --autostash --quiet 2>/dev/null || (cd ~/.claude && git checkout --ours . && git add -A && git commit -m \"sync: auto-resolve\" --quiet) 2>/dev/null || true",
+            "type": "command"
           }
         ]
       }
     ]
   },
-  "enabledPlugins": {
-    "aegis@aegis-dev": true,
-    "ecc@ecc": true,
-    "planning-with-files@planning-with-files": true,
-    "self-improving-agent@claude-code-skills": true,
-    "supergoal@supergoal": true,
-    "waza@waza": true,
-    "code-simplifier@claude-plugins-official": true,
-    "ralph-loop@claude-plugins-official": true,
-    "security-guidance@claude-plugins-official": true
-  },
-  "extraKnownMarketplaces": {
-    "aegis-dev": {
-      "source": {
-        "source": "github",
-        "repo": "GanyuanRan/Aegis"
-      }
-    },
-    "ecc": {
-      "source": {
-        "source": "github",
-        "repo": "affaan-m/ECC"
-      }
-    },
-    "planning-with-files": {
-      "source": {
-        "source": "github",
-        "repo": "OthmanAdi/planning-with-files"
-      }
-    },
-    "claude-code-skills": {
-      "source": {
-        "source": "github",
-        "repo": "alirezarezvani/claude-skills"
-      }
-    },
-    "supergoal": {
-      "source": {
-        "source": "github",
-        "repo": "robzilla1738/supergoal"
-      }
-    },
-    "waza": {
-      "source": {
-        "source": "github",
-        "repo": "tw93/Waza"
-      }
-    }
-  },
+  "includeCoAuthoredBy": false,
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark"
 }
