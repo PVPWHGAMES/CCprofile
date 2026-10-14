@@ -1,1 +1,0 @@
-Let organizations merge duplicate accounts while preserving their history.

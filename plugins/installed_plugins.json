@@ -80,6 +80,16 @@
         "lastUpdated": "2026-06-29T15:19:07.376Z",
         "gitCommitSha": "ac1cc9d685718996df081d70e677d527c3ff981f"
       }
+    ],
+    "aegis@aegis-dev": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\pvp\\.claude\\plugins\\cache\\aegis-dev\\aegis\\2.13.0",
+        "version": "2.13.0",
+        "installedAt": "2026-10-14T00:48:08.615Z",
+        "lastUpdated": "2026-10-14T00:48:08.615Z",
+        "gitCommitSha": "d4942b96fb5d9a96b71ed27030f9eaaf4285481b"
+      }
     ]
   }
 }

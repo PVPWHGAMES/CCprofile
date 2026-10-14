@@ -1,2 +1,0 @@
-Reject export archive names that escape the destination, including parent
-directory segments.

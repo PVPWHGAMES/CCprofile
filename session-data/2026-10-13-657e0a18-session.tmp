@@ -11,17 +11,40 @@
 ## Session Summary
 
 ### Tasks
-- clashVerge配置问题，帮我在 全局扩展脚本 里把代理节点的dns服务器换成国外的 C:\Users\pvp\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles
+- 排查 DeepSeek Harness（dsh）桌面端**插件导致启动失败**的问题，定位根因并恢复到可启动状态。
+- 确认 4 个已装插件是否存在可用更新（用户想通过升级绕过问题）。
+
+### Decisions Made
+- **更新查询结论：无可升级版本**。用本地 curl 走真实网络（绕开 npm 瞬时 DNS 问题）查询，npm latest 均等于已装版本：
+  | 包 | 版本 |
+  |---|---|
+  | `@linxin666/dsh-client-ui-aionui-panel` | 0.3.6 |
+  | `@linxin666/dsh-desktop-launcher` | 0.3.13 |
+  | `@linxin666/dsh-tool-describe-image` | 0.3.24 |
+  | `@linxin666/dsh-live-stats` | 0.1.20 |
+  桌面端 GitHub 最新 release 同为 **5.0.1**（2026-10-06），与已装版本一致 → 上游无修复版，**停用是唯一可行方案**（已落地）。
+- **恢复策略：按内容寻址取原始字节**。安装包自带每个文件的 SHA256，pnpm store 内容寻址 → 从安装器的 `$PLUGINSDIR\app-64.7z` 提取原始文件并逐个校验哈希，而非新建/降级依赖。
+- **最终决定：完整卸载 `@deepseek-harness-tui/dsh-tui@0.14.0`**（不是停用）。CLI 拒绝修改该 profile，改用**桌面端内置的 pnpm 11.22.0**（与当初安装它的版本一致）执行移除，先备份后删除。
 
 ### Files Modified
-- C:\Users\pvp\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles\Script.js
-- C:\Users\pvp\AppData\Local\Temp\cv-script-check\check.js
+- **新建** `C:\Users\pvp\.dsh-community\cordis.patch.yml` — 在 home 层停用 4 个插件（row id `web-ui-dsh-aionui-panel` → 失去 aionui-panel，其余为 desktop-launcher / tool-describe-image / live-stats）。
+- 应用目录中**恢复 `schemastery` 的 4 个文件**（自安装包 `app-64.7z` 提取，SHA256 全部一致），写回后桌面端自身解析步骤通过。
 
-### Tools Used
-Bash, Read, WebFetch, AskUserQuestion, Edit, Grep, Write
+### Unresolved Issues
+- **`dsh-tui` 的卸载未完成**：用户中断了「备份 + 移除」那一步的工具调用，之后只发了「继续」。当前 profile 里该依赖仍在，启动仍被阻塞。
+- 卸载后需验证：
+  1. `profiles\desktop\package.json` 的 `dsh.profile.bundles` 不再含 `@deepseek-harness-tui/dsh-tui`；
+  2. 重启应用，确认不再出现 `Error: service "webServer" has b...`（重复注册服务）且能进入插件加载阶段。
 
-### Stats
-- Total user messages: 1
+### Next Session Context
+**两次故障是同一个动作造成的** —— 今天安装 `@deepseek-harness-tui/dsh-tui@0.14.0`：
+- **坑一（已修复）**：该安装操作把 `schemastery` 目录变成了**空目录**。启动代码在 `profile.mjs:1615` 因找不到它直接抛错 `desktop runtime packages are missing: schemastery`，**在进入插件加载前就失败**（日志停在"应用就绪"）。这是 60 个运行时依赖里**唯一**缺失的一个（59/60 可解析）。`plugin-archives\desktop\snapshots\*` 里只有指向空目录的符号链接，无独立副本，故改从安装器提取。修复后 `package-resolution=402ms packages=309`，与以往成功启动一致。
+- **坑二（仍在阻塞）**：dsh-tui 作为 profile bundle 挂载，和桌面端自带运行时**重复注册服务**。对比桌面端自带 12 个 bundle，`dsh.profile.bundles` **只多出** `['@deepseek-harness-tui/dsh-tui']`（无缺失）。dsh-tui 自带 `cordis.patch.yml`，是一个完整 TUI 运行时补丁：把 `session-persistence-jsonl`（第 237 行）和 `@deepseek-ai/dsh-host-webserver`（第 423 行）**又挂了一遍**，而桌面 profile 已通过 web-app/base 挂过 → Cordis 拒绝重复提供同一服务并抛错。
+
+**下一步操作**：关闭应用 → 备份 `profiles\desktop\package.json`（含 lockfile）→ 用桌面端内置 pnpm 11.22.0 移除 `@deepseek-harness-tui/dsh-tui` → 校验 bundles 列表 → 重启实测。
+
+**注意**：相关记忆 [[dsh-community-home-patch-layer]] 已记录插件启停写 `~/.dsh-community/cordis.patch.yml`、home 层会压过 profile 层和插件管理界面 —— 但本次坑一/坑二**不是** home 补丁重新启用插件所致，排查时已排除该假设，勿重复走这条弯路。
+<!-- LLM_SUMMARY:pre-compact:08:46 -->
 <!-- ECC:SUMMARY:END -->
 
 ### Notes for Next Session
@@ -31,3 +54,6 @@ Bash, Read, WebFetch, AskUserQuestion, Edit, Grep, Write
 ```
 [relevant files]
 ```
+
+---
+**[Compaction occurred at 08:45]** - Context was summarized

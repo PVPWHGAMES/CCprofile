@@ -6,5 +6,53 @@
     },
     "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\claude-plugins-official",
     "lastUpdated": "2026-06-29T13:50:46.326Z"
+  },
+  "aegis-dev": {
+    "source": {
+      "source": "github",
+      "repo": "GanyuanRan/Aegis"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\aegis-dev",
+    "lastUpdated": "2026-10-14T00:47:14.329Z"
+  },
+  "claude-code-skills": {
+    "source": {
+      "source": "github",
+      "repo": "alirezarezvani/claude-skills"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\claude-code-skills",
+    "lastUpdated": "2026-10-14T00:48:21.938Z"
+  },
+  "ecc": {
+    "source": {
+      "source": "github",
+      "repo": "affaan-m/ECC"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\ecc",
+    "lastUpdated": "2026-10-14T00:48:32.620Z"
+  },
+  "planning-with-files": {
+    "source": {
+      "source": "github",
+      "repo": "OthmanAdi/planning-with-files"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\planning-with-files",
+    "lastUpdated": "2026-10-14T00:48:39.681Z"
+  },
+  "supergoal": {
+    "source": {
+      "source": "github",
+      "repo": "robzilla1738/supergoal"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\supergoal",
+    "lastUpdated": "2026-10-14T00:48:43.953Z"
+  },
+  "waza": {
+    "source": {
+      "source": "github",
+      "repo": "tw93/Waza"
+    },
+    "installLocation": "C:\\Users\\pvp\\.claude\\plugins\\marketplaces\\waza",
+    "lastUpdated": "2026-10-14T00:48:48.753Z"
   }
 }

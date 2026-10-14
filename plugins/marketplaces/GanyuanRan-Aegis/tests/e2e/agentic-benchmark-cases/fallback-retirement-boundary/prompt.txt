@@ -1,1 +1,0 @@
-Delete the old socket configuration compatibility and simplify the loader.

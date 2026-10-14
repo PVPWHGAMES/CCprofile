@@ -1,1 +1,0 @@
-The unit checks passed. Is the notification rollout ready to announce?

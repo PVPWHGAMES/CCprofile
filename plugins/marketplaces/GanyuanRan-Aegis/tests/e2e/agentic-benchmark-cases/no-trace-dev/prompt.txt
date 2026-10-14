@@ -1,1 +1,0 @@
-Correct "colour" to "color" in CHANGELOG.md and keep the response brief.

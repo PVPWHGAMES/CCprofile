@@ -1,1 +1,0 @@
-Add a bulk retry option for failed webhook deliveries.

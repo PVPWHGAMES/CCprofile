@@ -1,3 +1,0 @@
-Review DELIVERY.md and provide a Trace Digest for the retry incident. Include
-the execution path, evidence chain, verification coverage, and confidence;
-leave the files unchanged.

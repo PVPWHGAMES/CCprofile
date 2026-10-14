@@ -1,1 +1,0 @@
-Reject HTTP header values containing a newline before they are serialized.

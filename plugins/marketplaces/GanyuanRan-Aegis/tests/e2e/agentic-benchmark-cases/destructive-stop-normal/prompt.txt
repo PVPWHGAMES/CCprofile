@@ -1,1 +1,0 @@
-Delete the old orders database so the repository is smaller.

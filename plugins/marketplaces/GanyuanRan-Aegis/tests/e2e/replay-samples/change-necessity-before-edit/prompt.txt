@@ -1,1 +1,0 @@
-The settings page sometimes shows "unset" for theme. Please handle it quickly and keep the change small.
