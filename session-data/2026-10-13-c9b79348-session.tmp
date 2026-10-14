@@ -1,0 +1,54 @@
+# Session: 2026-10-13
+**Date:** 2026-10-13
+**Started:** 16:58
+**Last Updated:** 17:35
+**Project:** vehicle-fms
+**Branch:** develop-wh
+**Worktree:** D:\公司项目\翌擎-速豹FMS\vehicle-fms
+**Repo:** D:\公司项目\翌擎-速豹FMS\vehicle-fms\.git
+
+---
+<!-- ECC:SUMMARY:START -->
+## Session Summary
+
+### Tasks
+- 查看7.1文档内容
+- 看看代码做到哪一步了
+- 继续
+
+### Files Modified
+- D:\Maven\rfms-test-settings.xml
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\dto\RfmsCallbackHeader.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\resources\db\migration\rfms_subscription_callback_headers.sql
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\controller\vo\request\RfmsSubscriptionCreateRequest.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\entity\RfmsSubscription.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\common\util\RfmsCallbackValidator.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\service\impl\RfmsSubscriptionServiceImpl.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\service\impl\RfmsCallbackDeliveryServiceImpl.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\service\impl\RfmsCallbackTokenCache.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\dao\RfmsSubscriptionDao.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\resources\com\base\galaxy\vehicle\dao\RfmsSubscriptionDao.xml
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\resources\db\schema\rfms_subscription.sql
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\service\impl\RfmsCallbackClientServiceImpl.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\main\java\com\base\galaxy\vehicle\dao\JdbcRfmsSubscriptionStore.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\test\java\com\base\galaxy\vehicle\service\RfmsCallbackValidatorTest.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\test\java\com\base\galaxy\vehicle\service\RfmsCallbackTokenCacheTest.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\test\java\com\base\galaxy\vehicle\service\RfmsCallbackDeliveryServiceTest.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\test\java\com\base\galaxy\vehicle\dao\JdbcRfmsSubscriptionStoreTest.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\test\java\com\base\galaxy\vehicle\controller\RfmsSubscriptionHttpTest.java
+- D:\公司项目\翌擎-速豹FMS\vehicle-fms\src\test\java\com\base\galaxy\vehicle\service\RfmsCallbackClientServiceTest.java
+
+### Tools Used
+Glob, Read, Grep, Bash, Write, AskUserQuestion, Edit
+
+### Stats
+- Total user messages: 3
+<!-- ECC:SUMMARY:END -->
+
+### Notes for Next Session
+-
+
+### Context to Load
+```
+[relevant files]
+```

@@ -1,0 +1,33 @@
+# Session: 2026-10-13
+**Date:** 2026-10-13
+**Started:** 16:35
+**Last Updated:** 16:35
+**Project:** Desktop
+**Branch:** unknown
+**Worktree:** C:\Users\pvp\Desktop
+
+---
+<!-- ECC:SUMMARY:START -->
+## Session Summary
+
+### Tasks
+- clashVerge配置问题，帮我在 全局扩展脚本 里把代理节点的dns服务器换成国外的 C:\Users\pvp\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles
+
+### Files Modified
+- C:\Users\pvp\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles\Script.js
+- C:\Users\pvp\AppData\Local\Temp\cv-script-check\check.js
+
+### Tools Used
+Bash, Read, WebFetch, AskUserQuestion, Edit, Grep, Write
+
+### Stats
+- Total user messages: 1
+<!-- ECC:SUMMARY:END -->
+
+### Notes for Next Session
+-
+
+### Context to Load
+```
+[relevant files]
+```
